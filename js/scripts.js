@@ -1,18 +1,18 @@
-// Instrukcje warunkowe w praktyce
+// Dodawanie tablicy
 
-var triangle1Area = getTriangleArea(10, 15);
-var triangle2Area = getTriangleArea(0, 15);
-var triangle3Area = getTriangleArea(10, -15);
+var womansNames = ['Asia', 'Kasia', 'Ola', 'Ania'];
+var mensNames = ['Piotr', 'Tomasz', 'Jarek', 'Michal'];
 
-console.log("Pole pierwszego trojkata: " + triangle1Area);
-console.log("Pole pierwszego trojkata: " + triangle2Area);
-console.log("Pole pierwszego trojkata: " + triangle3Area);
+var allNames = womansNames.concat(mensNames);
 
-function getTriangleArea(a, h) {
-  if(a <= 0 || h <= 0) {
-    alert("Nieprawidlowe dane");
-    return "Nieprawidlowe dane";
-  } else {
-    return a*h/2;
+function addName(newName){
+  if(allNames.indexOf(newName) == -1){
+    allNames.push(newName);
   }
+  console.log("Po dodaniu probie dodania imenia '" + newName + "' tablica zawiera nastepujace imiona: " + allNames);
 }
+
+console.log("Po polaczeniu tablica zawiera nastepujace imiona: " + allNames);
+addName('Marian');
+addName('Asia');
+addName('Kuba');
