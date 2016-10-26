@@ -1,18 +1,8 @@
-// Dodawanie tablicy
+// Papugi i słonie
 
-var womansNames = ['Asia', 'Kasia', 'Ola', 'Ania'];
-var mensNames = ['Piotr', 'Tomasz', 'Jarek', 'Michal'];
+var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.";
+var slonie = "Zielone słonie";
+slonie = slonie.toUpperCase();
+text = text.replace('Papugi', slonie);
 
-var allNames = womansNames.concat(mensNames);
-
-function addName(newName){
-  if(allNames.indexOf(newName) == -1){
-    allNames.push(newName);
-  }
-  console.log("Po dodaniu probie dodania imenia '" + newName + "' tablica zawiera nastepujace imiona: " + allNames);
-}
-
-console.log("Po polaczeniu tablica zawiera nastepujace imiona: " + allNames);
-addName('Marian');
-addName('Asia');
-addName('Kuba');
+console.log(text.substr(0, text.length/2));
