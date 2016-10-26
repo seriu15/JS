@@ -1,8 +1,14 @@
-// Papugi i słonie
+// Choinka
 
-var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.";
-var slonie = "Zielone słonie";
-slonie = slonie.toUpperCase();
-text = text.replace('Papugi', slonie);
+function rysujChoinke(wysokosc){
+  for(var k=1; k<=wysokosc; k++){
+    var star = "";
+    for (var i = 0; i < k*2-1; i++) {
+      star += '*';
+    }
+    console.log(star);
+  }
+}
 
-console.log(text.substr(0, text.length/2));
+
+rysujChoinke(5);
