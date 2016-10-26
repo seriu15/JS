@@ -1,14 +1,17 @@
-// Pole trójkąta
+// Instrukcje warunkowe w praktyce
 
-var triangle = {
-  a: 5,
-  h: 2,
-  triangleArea: function() {
-    return this.a * this.h / 2;
-  }
-};
+var a,
+    b,
+    value;
 
-triangle.a = prompt("Enter width");
-triangle.h = prompt("Enter height");
-console.log('Pole trójkąta o podstawie a: ' + triangle.a + ' i wysokości h: ' + triangle.h + ' wynosi: ' + triangle.triangleArea());
-alert('Pole trójkąta o podstawie a: ' + triangle.a + ' i wysokości h: ' + triangle.h + ' wynosi: ' + triangle.triangleArea());
+value = (a*a) + (2 * a * b) - (b*b);
+
+if(value < 0) {
+  console.log("Wynik ujemy")
+}
+else if(value > 0) {
+  console.log("Wynik dodatni");
+}
+else {
+  console.log("Wynik rowny zero");
+}
