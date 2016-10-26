@@ -3,6 +3,8 @@
 var a,
     b,
     value;
+a = prompt("Podaj wartosc a");
+b = prompt("Podaj wartosc b");
 
 value = (a*a) + (2 * a * b) - (b*b);
 
