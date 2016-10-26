@@ -1,19 +1,18 @@
 // Instrukcje warunkowe w praktyce
 
-var a,
-    b,
-    value;
-a = prompt("Podaj wartosc a");
-b = prompt("Podaj wartosc b");
+var triangle1Area = getTriangleArea(10, 15);
+var triangle2Area = getTriangleArea(0, 15);
+var triangle3Area = getTriangleArea(10, -15);
 
-value = (a*a) + (2 * a * b) - (b*b);
+console.log("Pole pierwszego trojkata: " + triangle1Area);
+console.log("Pole pierwszego trojkata: " + triangle2Area);
+console.log("Pole pierwszego trojkata: " + triangle3Area);
 
-if(value < 0) {
-  console.log("Wynik ujemy")
-}
-else if(value > 0) {
-  console.log("Wynik dodatni");
-}
-else {
-  console.log("Wynik rowny zero");
+function getTriangleArea(a, h) {
+  if(a <= 0 || h <= 0) {
+    alert("Nieprawidlowe dane");
+    return "Nieprawidlowe dane";
+  } else {
+    return a*h/2;
+  }
 }
