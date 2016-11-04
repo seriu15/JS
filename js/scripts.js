@@ -1,14 +1,8 @@
-// Choinka
+// Eventy
 
-function rysujChoinke(wysokosc){
-  for(var k=1; k<=wysokosc; k++){
-    var star = "";
-    for (var i = 0; i < k*2-1; i++) {
-      star += '*';
-    }
-    console.log(star);
-  }
-}
+var list = document.getElementById('Lista'),
+    add = document.getElementById('addElem');
 
-
-rysujChoinke(5);
+add.addEventListener('click', function() {
+  list.innerHTML += '<li>item ' + list.getElementsByTagName('li').length + '</li>';
+});
